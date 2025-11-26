@@ -1,24 +1,137 @@
-# Compiled class file
+# =================================
+# 航空旅行服务平台 - 全栈项目.gitignore
+# 适用于 Spring Boot + Vue.js 项目
+# =================================
+
+# ========== Java后端相关 ==========
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ========== Node.js前端相关 ==========
+# 依赖目录
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 构建输出
+dist/
+build/
+.nyc_output/
+coverage/
+
+# 缓存文件
+.npm
+.eslintcache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ========== Vue.js特定 ==========
+.DS_Store
+*.local
+
+# ========== 环境变量文件 ==========
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ========== IDE和编辑器 ==========
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+*.sw?
+*.un~
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# 其他编辑器
+*.sublime-*
+*.komodoproject
+
+# ========== 日志文件 ==========
+logs/
+*.log
+log/
+*.log.*
+
+# ========== 操作系统生成 ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ========== 数据库相关 ==========
+# 本地开发数据库文件
+*.db
+*.sqlite
+*.h2.db
+
+# ========== 临时文件 ==========
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ========== 部署相关 ==========
+# Docker
+docker-compose.override.yml
+
+# Kubernetes
+*kubeconfig
+
+# ========== 其他 ==========
+# 系统文件
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# 应用特定
+application-dev.yml
+application-prod.yml
+/config/application-local.yml
